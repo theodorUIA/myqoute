@@ -1,11 +1,7 @@
 package myqoute
 
-import (
-	"fmt"
+import "rsc.io/quote"
 
-	"rsc.io/quote"
-)
-
-func SayHello() {
-	fmt.Println(quote.Hello())
+func GetQuote() string {
+	return quote.Glass()
 }

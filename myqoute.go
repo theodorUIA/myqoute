@@ -23,7 +23,7 @@ func GetQuote() string {
 		newquote := quote.Hello()
 		return newquote
 	default:
-		newquote := quote.Glass()
+		newquote := "Fant ikke en ny quote"
 		return newquote
 	}
 

@@ -3,8 +3,6 @@ package myqoute
 import (
 	"math/rand"
 
-	"strconv"
-
 	"time"
 
 	"rsc.io/quote"
@@ -15,23 +13,23 @@ func GetQuote() string {
 	min := 1
 	max := 2
 	var randNum = min + rand.Intn(max-min+1)
-	newquote := "Failed from start." + " Num: " + strconv.Itoa(randNum)
+	newquote := "Failed from start."
 	switch randNum {
 	case 1:
 		newquote = quote.Glass()
-		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
+		newquote = newquote
 	case 2:
 		newquote = quote.Go()
-		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
+		newquote = newquote
 	case 3:
 		newquote = quote.Opt()
-		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
+		newquote = newquote
 	case 4:
 		newquote = quote.Hello()
-		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
+		newquote = newquote
 	default:
 		newquote = "Failed to find number.."
-		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
+		newquote = newquote
 	}
 	return newquote
 

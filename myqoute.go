@@ -11,6 +11,7 @@ import (
 func GetQuote() string {
 
 	var randNum = rand.Intn(4) + 1
+	newquote := ""
 	switch randNum {
 	case 1:
 		newquote := quote.Glass()
@@ -29,6 +30,6 @@ func GetQuote() string {
 		newquote := "Fant ikke en ny quote"
 		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
 	}
-	return ""
+	return newquote
 
 }

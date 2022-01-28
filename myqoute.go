@@ -3,6 +3,8 @@ package myqoute
 import (
 	"math/rand"
 
+	"strconv"
+
 	"rsc.io/quote"
 )
 
@@ -12,19 +14,21 @@ func GetQuote() string {
 	switch randNum {
 	case 1:
 		newquote := quote.Glass()
+		newquote = newquote + strconv.Itoa(randNum)
 		return newquote
 	case 2:
 		newquote := quote.Go()
-		return newquote
+		newquote = newquote + strconv.Itoa(randNum)
 	case 3:
 		newquote := quote.Opt()
-		return newquote
+		newquote = newquote + strconv.Itoa(randNum)
 	case 4:
 		newquote := quote.Hello()
-		return newquote
+		newquote = newquote + strconv.Itoa(randNum)
 	default:
 		newquote := "Fant ikke en ny quote"
-		return newquote
+		newquote = newquote + strconv.Itoa(randNum)
 	}
+	return ""
 
 }

@@ -14,20 +14,20 @@ func GetQuote() string {
 	switch randNum {
 	case 1:
 		newquote := quote.Glass()
-		newquote = newquote + strconv.Itoa(randNum)
+		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
 		return newquote
 	case 2:
 		newquote := quote.Go()
-		newquote = newquote + strconv.Itoa(randNum)
+		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
 	case 3:
 		newquote := quote.Opt()
-		newquote = newquote + strconv.Itoa(randNum)
+		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
 	case 4:
 		newquote := quote.Hello()
-		newquote = newquote + strconv.Itoa(randNum)
+		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
 	default:
 		newquote := "Fant ikke en ny quote"
-		newquote = newquote + strconv.Itoa(randNum)
+		newquote = newquote + ". Num: " + strconv.Itoa(randNum)
 	}
 	return ""
 

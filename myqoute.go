@@ -8,7 +8,7 @@ import (
 
 func GetQuote() string {
 
-	var randNum = rand.Intn(4-1) + 1
+	var randNum = rand.Intn(4) + 1
 	switch randNum {
 	case 1:
 		newquote := quote.Glass()

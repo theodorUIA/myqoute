@@ -10,7 +10,7 @@ import (
 
 func GetQuote() string {
 
-	var randNum = rand.Intn(4) + 1
+	var randNum = rand.Intn(1-4) + 1
 	newquote := "Fant ikke en ny quote"
 	switch randNum {
 	case 1:

@@ -5,12 +5,16 @@ import (
 
 	"strconv"
 
+	"time"
+
 	"rsc.io/quote"
 )
 
 func GetQuote() string {
-
-	var randNum = rand.Intn(4-1) + 1
+	rand.Seed(time.Now().UnixNano())
+	min := 1
+	max := 2
+	var randNum = min + rand.Intn(max-min+1)
 	newquote := "Failed from start." + " Num: " + strconv.Itoa(randNum)
 	switch randNum {
 	case 1:
